@@ -1,7 +1,7 @@
 {
   "name": "Copy As HTML Entity",
   "description": "Copies the HTML Entity version of the selected Unicode characters",
-  "version": "0.1",
+  "version": "0.2",
   "permissions": ["contextMenus", "clipboardRead", "clipboardWrite"],
   "background": {
     "scripts": ["script.js"]

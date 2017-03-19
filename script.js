@@ -6,7 +6,7 @@ function copyWorkAround(data) {
 }
 
 var clickTo = {
-  ASCII: function (info) {
+  Decimal: function (info) {
     console.log(translate(info.selectionText, { }));
     copyWorkAround(translate(info.selectionText, { }));
   },
@@ -24,5 +24,5 @@ function translate(str, options) {
   return result;
 }
 
-chrome.contextMenus.create({ "title": "To ASCII", "contexts":["selection"], "onclick": clickTo['ASCII']});
+chrome.contextMenus.create({ "title": "To Decimal", "contexts":["selection"], "onclick": clickTo['Decimal']});
 chrome.contextMenus.create({ "title": "To Hex", "contexts":["selection"], "onclick": clickTo['Hex']});
